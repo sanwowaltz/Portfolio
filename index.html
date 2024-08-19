@@ -1,0 +1,166 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/44a3794737.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+<div class="container">
+    <nav>
+    <div class="logo"><h1><span>H</span>adi</h1></div>
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li> 
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-x" onclick="closeMenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+    </nav>
+     <div class="header-text">
+        <p>Web Developer</p>
+        <h1>Hi, I'm <span>Sanwo</span><br> Abdulhadi from Nigeria</h1> 
+      </div>
+</div>
+    </div>
+
+<!-----------about----------->
+   <div id="about">
+
+
+      <div class="container">
+         <div class="row">
+              <div class="about-col-1">
+                <img src="images/user.png" alt="">
+              </div>
+              <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    Hi, I'm Sanwo Abdulhadi, a web development enthusiast and accountancy student at Caleb University. Although I'm still in my undergraduate studies (2021-present), I've been actively honing my web development skills through various projects and certifications.
+                    
+                    With over 10 web application projects under my belt, I've developed a strong foundation in JavaScript, CSS, and HTML. My passion lies in crafting responsive, user-centered web applications that deliver seamless experiences. I'm also skilled in project management and problem-solving, ensuring timely project completion.
+                    
+                    Certified in JavaScript by Udemy, I'm eager to leverage my skills and knowledge to drive innovative solutions. As a detail-oriented and dedicated individual, I'm excited to collaborate on projects that push the boundaries of web development.</p>
+
+    <div class="tab-titles">
+<p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+<p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+<p></p>
+<p></p>
+    </div>
+
+    <div class="tab-content active-tab" id="skills">
+        <ul>
+            <li><span>Web Development</span><br>Web App Development</li>
+            <li><span>App Development</span><br>Building Android/IOS apps</li>
+        </ul>
+    </div>
+
+    <div class="tab-content" id="experience">
+        <ul>
+            <li><span>2022 - Current</span><br>Over 15 web apps completed including live ones</li>
+        </ul>
+    </div>
+              </div>
+         </div>
+      </div>
+   </div>
+
+
+   <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Interactive Web Solution</h2>
+            <p>Crafting stunning web applications that engage and convet. <br> Leveraging HTML, CSS, BOOTSTRAP, JAVASCRIPT, and REACT <br> to deliver responsive, functional, and modern web experiences.</p>
+           
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>Creating intuitive and engaging mobile apps that delight users. Beautiful UI/UX design and robust development for IOS and Android.</p>
+         
+          </div>
+        </div>
+    </div>
+   </div>
+
+
+   <!------------------portfolio---------------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-3.png" alt="">
+                <div class="layer">
+                    <h3>Online Ecommerce Store</h3>
+                    <p>A live website to shop for all your fashion goods</p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            
+            <div class="work">
+                <img src="images/work-2.png" alt="">
+                <div class="layer">
+                    <h3>Weather Web App</h3>
+                    <p>A live web app to tell accurate weather forecast</p>
+                    <a href="https://sanwowaltz.github.io/Weatherapp/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+
+<!----contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row"> 
+            <div class="contact-left">
+              <h1 class="sub-title">Contact Me</h1>
+              <p> <i class="fa-solid fa-paper-plane"></i>sanwowaltz@gmail.com</p>
+              <p><i class="fa-solid fa-phone-volume"></i>+234 9051846309</p> 
+              <div class="social-icon">
+                 <a href="https://wa.me/+2349047067947"><i class="fa-brands fa-whatsapp"></i></a>
+                 <a href="https://www.instagram.com/jomiii.o?igsh=MThrNmF6bm14Mng5ZQ%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+                 <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                 <a href="https://www.upwork.com/freelancers/~0179f97f21ca246e69"><i class="fa-brands fa-upwork"></i></a>
+                 <a href="https://www.linkedin.com/in/sanwo-abdulhadi-a38318237"><i class="fa-brands fa-linkedin-in"></i></a>
+              </div>
+              <a href="images/My-Cv.png" download class="btn btn2">Download Cv</a>
+            </div>
+            <div class="contact-right">
+               <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your name" required>
+                <input type="text" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+               </form> 
+
+               <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright @ Hadi</p>
+    </div>
+</div>
+
+<script src="main.js"></script>
+
+<script>
+   
+  </script>
+</body>
+</html>
